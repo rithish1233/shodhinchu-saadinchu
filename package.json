@@ -11,5 +11,6 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
-  }
+  },
+  "start": "cd backend && npm start"
 }
