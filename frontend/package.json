@@ -1,0 +1,45 @@
+{
+  "name": "shodhinchu-saadinchu-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@fontsource/noto-serif-telugu": "^5.0.8",
+    "@fontsource/tiro-telugu": "^5.0.3",
+    "axios": "^1.6.3",
+    "html5-qrcode": "^2.3.8",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^7.14.0",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.6.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
