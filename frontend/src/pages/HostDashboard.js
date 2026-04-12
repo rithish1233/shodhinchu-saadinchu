@@ -50,7 +50,7 @@ export default function HostDashboard() {
   if (loading) return <div className="flex-center" style={{ height: '60vh' }}><div className="spinner"></div></div>;
   if (!dashboard) return null;
 
-  const { summary, leaderboard, activeTeams, notStarted, paths } = dashboard;
+  const { summary, leaderboard, activeTeams, paths } = dashboard;
 
   const colorMap = {
     Red: '#e74c3c', Blue: '#3498db', Green: '#2ecc71', Yellow: '#f1c40f',
