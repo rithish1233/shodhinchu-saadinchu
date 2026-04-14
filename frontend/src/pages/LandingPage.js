@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 export default function LandingPage() {
   const { user, isHost, isTeam } = useAuth();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
 
   if (user) {
     if (isHost) return <Navigate to="/host" replace />;

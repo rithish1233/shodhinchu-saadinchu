@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "Treasure Hunt Game - Full Stack Application",
   "scripts": {
-    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "postinstall": "npm run install-all",
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
     "start-backend": "cd backend && npm start",
     "start-frontend": "cd frontend && npm start",
-    "build": "cd frontend && npm run build"
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
-  },
-  "start": "cd backend && npm start"
+  }
 }
