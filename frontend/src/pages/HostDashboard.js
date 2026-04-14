@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { io } from 'socket.io-client';
 import toast from 'react-hot-toast';
 
-const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
+const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || '';
 
 export default function HostDashboard() {
   const { t, language } = useLanguage();
@@ -26,7 +26,7 @@ export default function HostDashboard() {
 
   useEffect(() => {
     fetchDashboard();
-    const socket = io(SOCKET_URL);
+    const socket = io(SOCKET_URL || window.location.origin);;
     socket.emit('join-host');
     socket.on('team-completed', (data) => {
       toast.success(`🏆 ${data.teamName} completed in ${data.completionTimeMinutes} min!`);
